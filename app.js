@@ -1,11 +1,13 @@
 let nCor = document.querySelectorAll('.nCor');
 let codCor = document.querySelectorAll('.codCor');
 
+let root = document.querySelector(':root');
+
 let paleta = [
-    '#14213D',
-    '#FCA311',
-    '#E08A00',
-    '#000000',
+    '#008b8b',
+    '#60dada',
+    '#4E4E4E',
+    '#7D7D7D',
     '#FFFFFF',
 ]
 
@@ -15,20 +17,8 @@ for(let i=0; i<nCor.length; i++){
 }
 
 function mudarInterface(pal){
-    let tags = [
-        document.querySelector(".header"),
-        document.querySelector(".aside"),
-        document.querySelector(".main"),
-        document.querySelector(".footer"),
-        document.querySelector(".container-layout")
-    ]
-
-    for(let i=0; i<tags.length; i++){
-        if(i == tags.length-1){
-            tags[tags.length-1].style.color = pal[4]
-        } else {
-            tags[i].style.background = pal[i];
-        }
+    for(let i=0; i<pal.length; i++){
+        root.style.setProperty(`--cor-${i}`, `${paleta[i]}`)
     }
 }
 
