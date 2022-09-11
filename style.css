@@ -4,6 +4,7 @@
 }
 
 body {
+    padding: 2.7rem 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -16,8 +17,8 @@ body {
     width: 100%;
     padding: .5rem;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 16px -9px #000000; 
-    box-shadow: 0px 0px 16px -9px #000000;
+    -webkit-box-shadow: 0px 0px 16px -9px #000; 
+    box-shadow: 0px 0px 16px -9px #000;
 }
 
 .paleta {
@@ -43,43 +44,175 @@ body {
     margin-top: .5rem;
 }
 
-header {
-    border-radius: 10px 10px 0 0;
-    grid-area: header;
-    margin-bottom: .2rem;
+.container-layout {
+    -webkit-box-shadow: 0px 0px 16px -5px #000; 
+    box-shadow: 0px 0px 16px -5px #000;
+    min-height: 35rem;
+    max-width: 40rem;
+    margin: 3rem 0;
+    width: 100%;
+    border-radius: 10px;
 }
 
-aside {
-    grid-area: aside;
-    margin: 0 .2rem .2rem 0;
+.container-layout header {
+    width: 100%;
+    background-color: var(--cor-0);
 }
 
-main {
-    grid-area: main;
-    margin: 0 0 .2rem 0;
+.container-layout nav {
+    width: 29rem;
+    height: 3rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    flex-shrink: 1;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item:hover {
+    background-color: var(--cor-1);
+}
+
+.hover {
+    background-color: var(--cor-1);
+}
+
+.nav_item-text {
+    background-color: var(--cor-1);
+    width: 5rem;
+    height: .7rem;
+}
+
+section:nth-child(1) {
+    background-color: var(--cor-1);
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ilustration {
+    width: 7rem;
+    height: 6rem;
+    background-color: var(--cor-4);
+}
+
+.ilustration-header {
+    height: 1.5rem;
+    background-color: var(--cor-3);
+}
+
+.ilustration-main {
+    margin-top: 1.5rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ilustration_main-button {
+    height: 1rem;
+    width: 4rem;
+    background-color: #008b8b;
+}
+
+.ilustration_main-button:hover {
+    background-color: var(--cor-1);
+}
+
+section:nth-child(1) .ExampleText-container {
+    width: 20rem;
+    height: 6rem;
+    margin-left: 2rem;
+}
+
+section:nth-child(1) .ExampleText-title {
+    background-color: var(--cor-0);
+    height: 1rem;
+    width: 7rem;
+}
+
+section:nth-child(1) .ExampleText-text {
+    height: 1rem;
+    width: 100%;
+    margin: .5rem 0;
+    background-color: var(--cor-4);
+}
+
+section:nth-child(1) .ExampleText-text:nth-last-child(1) {
+    width: 50%;
+    margin: auto;
+}
+
+section:nth-child(2) {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section:nth-child(2) .ExampleText-container {
+    width: 29rem;
+    height: 6rem;
+}
+
+section:nth-child(2) .ExampleText-title {
+    background-color: var(--cor-3);
+    height: 1rem;
+    width: 100%;
+}
+
+section:nth-child(2) .ExampleText-text {
+    height: 1rem;
+    width: 100%;
+    margin: .5rem 0;
+    background-color: var(--cor-0);
+}
+
+section:nth-child(2) .ExampleText-text:nth-last-child(1) {
+    width: 50%;
+    margin: auto;
+}
+
+.cards {
+    width: 29rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.card-img {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--cor-0);
+}
+
+.card-title {
+    background-color: var(--cor-3);
+    height: 1rem;
+    width: 100%;
+    margin: .5rem 0 0 0;
+}
+
+.card-text {
+    background-color: var(--cor-1);
+    height: 1rem;
+    width: 100%;
+    margin: .5rem 0;
 }
 
 footer {
-    grid-area: footer;
-    border-radius: 0 0 10px 10px;
+    background-color: var(--cor-2);
+    height: 7rem;
 }
 
-.container-layout {
-    -webkit-box-shadow: 0px 0px 16px -5px #000000; 
-    box-shadow: 0px 0px 16px -5px #000000;
-    height: 20rem;
-    max-width: 40rem;
-    width: 100%;
-    border-radius: 10px;
-    display: grid;
-    grid-template-areas: 
-    "header header header header"
-    "aside main main main"
-    "aside main main main"
-    "footer footer footer footer"
-    ;
-}
-
-.item {
-    padding: 1rem;
+.saidaPaleta {
+    margin: 3rem 0;
 }
