@@ -86,7 +86,8 @@ body {
 
 .nav_item-text {
     background-color: var(--cor-1);
-    width: 5rem;
+    max-width: 5rem;
+    width: 100%;
     height: .7rem;
 }
 
@@ -120,7 +121,7 @@ section:nth-child(1) {
 .ilustration_main-button {
     height: 1rem;
     width: 4rem;
-    background-color: #008b8b;
+    background-color: var(--cor-0);
 }
 
 .ilustration_main-button:hover {
@@ -220,7 +221,7 @@ footer {
     margin: 3rem 0;
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (max-width: 650px) {
     body {
         padding: 0 1rem;
     }
