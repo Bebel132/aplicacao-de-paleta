@@ -60,7 +60,8 @@ body {
 }
 
 .container-layout nav {
-    width: 29rem;
+    max-width: 29rem;
+    width: 100%;
     height: 3rem;
     margin: auto;
     display: flex;
@@ -159,7 +160,8 @@ section:nth-child(2) {
 }
 
 section:nth-child(2) .ExampleText-container {
-    width: 29rem;
+    max-width: 29rem;
+    width: 100%;
     height: 6rem;
 }
 
@@ -182,7 +184,8 @@ section:nth-child(2) .ExampleText-text:nth-last-child(1) {
 }
 
 .cards {
-    width: 29rem;
+    max-width: 29rem;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
@@ -215,4 +218,27 @@ footer {
 
 .saidaPaleta {
     margin: 3rem 0;
+}
+
+@media screen and (min-width: 350px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    .cards {
+        max-width: 15rem;
+        gap: 1rem;
+    }
+
+    section:nth-child(2) .ExampleText-container {
+        max-width: 15rem;
+    }
+
+    section:nth-child(1) .ExampleText-container {
+        max-width: 10rem;
+    }
+
+    section:nth-child(1) .ExampleText-text:nth-last-child(1) {
+        width: 100%;
+    }
 }
