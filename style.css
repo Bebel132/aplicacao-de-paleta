@@ -217,6 +217,25 @@ footer {
     height: 7rem;
 }
 
+.footerExampleText-container {
+    max-width: 29rem;
+    width: 100%;
+    margin: auto;
+    height: 5rem;
+    padding: 1rem 0;
+}
+
+.footerExampleText-text {
+    width: 100%;
+    height: 1rem;
+    background-color: var(--cor-3);
+    margin: .5rem 0;
+}
+
+.footerExampleText-text:nth-last-child(1) {
+    width: 30%;
+}
+
 .saidaPaleta {
     margin: 3rem 0;
 }
@@ -240,6 +259,14 @@ footer {
     }
 
     section:nth-child(1) .ExampleText-text:nth-last-child(1) {
+        width: 100%;
+    }
+
+    .footerExampleText-container {
+        max-width: 12rem;
+    }
+
+    .footerExampleText-text:nth-last-child(1) {
         width: 100%;
     }
 }
